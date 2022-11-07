@@ -1,5 +1,5 @@
 // Task 1
-const containers = document.querySelectorAll('.container')[0]
+const containers = document.querySelectorAll('.containerString')[0]
 
 const first = document.getElementById('string-1')
 const second = document.getElementById('string-2')
@@ -15,12 +15,11 @@ function firstTask() {
 }
 
 // Task 2
-
 function secondTask() {
-    let elements = document.querySelectorAll('.element')
-
-    console.log(elements[i])
+    const elements = document.getElementsByClassName('element');
+    for (let i = 0; i < elements.length; i++) {
+        if (i < 3) elements[i].style.color = 'red';
+        else elements[i].style.color = 'green';
+    }
 }
-
-
 

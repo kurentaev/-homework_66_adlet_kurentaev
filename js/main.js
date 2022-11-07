@@ -25,10 +25,14 @@ function secondTask() {
 
 // Task 3
 function thirdTask() {
+    const colors = ['red', 'blue', 'green', 'yellow', 'violet'];
     for (let i = 0; i < 5; i++) {
-    let string = document.createElement('div');
-    string.className = 'element'
-    string.innerHTML = 'Element ' + [i + 1]
-    container.appendChild(string)
+        let string = document.createElement('div');
+        let number = document.createElement('span')
+        string.className = 'element'
+        string.innerText = 'Element '
+        number.innerText = [i + 1]
+        number.style.color = colors[i]
+        container.appendChild(string).appendChild(number)
     }
 }

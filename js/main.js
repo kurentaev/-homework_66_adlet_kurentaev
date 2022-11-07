@@ -23,3 +23,13 @@ function secondTask() {
     }
 }
 
+// Task 3
+function thirdTask() {
+    for (let i = 0; i < 5; i++) {
+    let string = document.createElement('div');
+    console.log(string)
+    string.className = 'element'
+    string.innerHTML = 'Element ' + [i + 1]
+    container.appendChild(string)
+    }
+}
